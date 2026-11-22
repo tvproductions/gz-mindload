@@ -241,7 +241,7 @@ def _python_files(paths: Sequence[str]) -> list[Path]:
 def main(argv: Sequence[str] | None = None) -> int:
     """Print the cognitive score of every function under *argv*'s paths, highest first."""
     parser = argparse.ArgumentParser(
-        prog="python -m gzkit.complexity.cognitive",
+        prog="gz-mindload",
         description="Print cognitive complexity per function, highest first.",
     )
     parser.add_argument("paths", nargs="+", help="Python files or directories to score")
